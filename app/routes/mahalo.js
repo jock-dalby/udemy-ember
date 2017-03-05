@@ -21,17 +21,21 @@ export default Ember.Route.extend({
       }
     });
 
+    // Create a new instance of the Surfer class
     let kai = Surfer.create({
       name: 'Jock'
     });
+    // Call the sup method on the instance of Surfer class
     kai.sup(`It's not easy being green!`);
 
+    // Create a new instance of the WahineSurfer subclass
     let sistah = WahineSurfer.create({
       name: 'Uncle Cracker'
     });
+      // Call the sup method on the instance of WahineSurfer subclass
     sistah.sup('I am a Wahine');
 
-    // When visit localhost:4200/mahalo, below alert will appear
+    // When visit localhost:4200/mahalo, check console.
     return kai;
   }
 });
